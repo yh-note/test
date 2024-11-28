@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>test page</title>
+        <title>시계 앱</title>
     </head>
     <body>
-        <h1>Hello World</h1>
+        <div id="root"></div>
+
+        <!-- React 및 ReactDOM 스크립트 -->
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+        <!-- Babel 스크립트 -->
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+        <!-- Clock 컴포넌트 -->
+        <script type="text/babel" src="Clock.js"></script>
+
+        <!-- 렌더링 스크립트 -->
+        <script type="text/babel">
+            const root = ReactDOM.createRoot(document.getElementById("root"));
+            root.render(<Clock />);
+        </script>
     </body>
 </html>
