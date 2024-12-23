@@ -1,79 +1,39 @@
-<p xmlns="http://www.w3.org/1999/xhtml">
-    <span 
-        data-framer-pasteboard-type="application/x-framer-layers"
-        data-framer-pasteboard='{
-            "layers": {
-                "tree": {
-                    "version": 113,
-                    "root": {
-                        "__class": "RootNode",
-                        "id": "clipboard",
-                        "children": [{
-                            "__class": "FrameNode",
-                            "name": "MyForm",
-                            "id": "hmwTTSpx0",
-                            "width": 440,
-                            "height": 199,
-                            "fillColor": "rgb(255, 247, 227)",
-                            "children": [
-                                {
-                                    "__class": "FrameNode",
-                                    "name": "MyLabel",
-                                    "id": "lIodi2c2k",
-                                    "width": 400,
-                                    "height": 119,
-                                    "fillColor": "white",
-                                    "children": [
-                                        {
-                                            "__class": "RichTextNode",
-                                            "id": "KBEyB9XdL",
-                                            "width": 143,
-                                            "height": 14,
-                                            "html": "<p style=\"
-                                                --framer-font-family: \'Inter\', \'Inter Placeholder\', sans-serif;
-                                                --framer-font-weight: 500;
-                                                --framer-text-color: rgb(136, 136, 136);
-                                                --framer-font-size: 12px;
-                                            \">Text Area</p>"
-                                        },
-                                        {
-                                            "__class": "CodeComponentNode",
-                                            "id": "paQqDcQCk",
-                                            "width": 400,
-                                            "height": 74,
-                                            "fillColor": "rgba(255,255,255,1)",
-                                            "codeComponentIdentifier": "local-module:codeFile/A47QYDd:default",
-                                            "$control__type": {
-                                                "type": "enum",
-                                                "value": "textArea"
-                                            }
-                                        }
-                                    ]
-                                },
-                                {
-                                    "__class": "CodeComponentNode",
-                                    "id": "QTceo7YT0",
-                                    "width": 1,
-                                    "height": 40,
-                                    "codeComponentIdentifier": "local-module:canvasComponent/krfIkDpXP:default"
-                                }
-                            ]
-                        }]
-                    }
-                }
-            },
-            "assets": [],
-            "sourceProjectId": "peRZQJESVvoAkMmYeMRP",
-            "moduleData": {
-                "local-module:codeFile/A47QYDd:default": {
-                    "kind": "externalModuleExport",
-                    "value": "module:lETqgCfYLl6IWYI9ZVYD/eRT0Seot5h0VNOWjC5Yw/TextInput.js:default"
-                },
-                "local-module:canvasComponent/krfIkDpXP:default": {
-                    "kind": "externalModuleExport",
-                    "value": "module:x6o0SkuIu6X91gW8IwDm/4VP8PEqmuQE78RfwkXEh/krfIkDpXP.js:default"
-                }
-            }
-        }'
-    ></span>
-</p>
+<div class="form-container" style="
+    width: 440px;
+    height: 199px;
+    background-color: rgb(255, 247, 227);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+">
+    <label class="input-group" style="
+        width: 400px;
+        height: 119px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    ">
+        <span style="
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            color: rgb(136, 136, 136);
+            font-size: 12px;
+        ">
+            Text Area
+        </span>
+        <textarea style="
+            width: 400px;
+            height: 74px;
+            background: linear-gradient(0deg, rgb(255, 240, 240), rgb(242, 203, 203));
+            border: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+            padding: 8px;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            resize: none;
+        "></textarea>
+    </label>
+</div>
